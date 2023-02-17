@@ -5,11 +5,11 @@ module "aft" {
   audit_account_id            = var.audit_account_id
   aft_management_account_id   = var.aft_management_account_id
   ct_home_region              = var.ct_home_region
-  tf_backend_secondary_region = var.tf_backend_secondary_region
+  tf_backend_secondary_region = "us-west-2"
 
   vcs_provider                                  = "github"
-  account_request_repo_name                     = "${var.github_username}/learn-terraform-aft-account-request"
-  account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
-  global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
-  account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
+  account_request_repo_name                     = "${var.nfink21}/AFT/learn-terraform-aft-account-request"
+  account_provisioning_customizations_repo_name = "${var.nfink21}/AFT/learn-terraform-aft-account-provisioning-customizations"
+  global_customizations_repo_name               = "${var.nfink21}/AFT/learn-terraform-aft-global-customizations"
+  account_customizations_repo_name              = "${var.nfink21}/AFT/learn-terraform-aft-account-customizations"
 }
